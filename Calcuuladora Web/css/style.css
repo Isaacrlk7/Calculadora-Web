@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  font-family: "arial", sans-serif;
+  min-height: 100vh;
+  background: url(/img/11998.jpg) center center/cover fixed;
+}
+.backg {
+  background: url(/img/snowflakes-15611.gif) center center/cover fixed;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+header nav {
+}
+header nav ul {
+}
+header nav ul li {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.mae {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0);
+
+  .ccl {
+    backdrop-filter: blur(10px) brightness(1.1) contrast(0.9);
+    border: 8px ridge rgba(25, 43, 126, 0.555);
+    border-radius: 10px;
+    box-shadow: inset 0 3px 6px #464646;
+    width: 300px;
+    padding: 20px; /* distanciamento interno da borda */
+  }
+  #visor {
+    width: 90%;
+    height: 60px;
+    border: 1px double black;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    text-align: right; /* para definir a direçao que vem o texto */
+    padding-right: 15px;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .box-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  button {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #7c7c7c;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  button:hover {
+    background-color: #d4d4d4;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  button:active {
+    background-color: #d4d4d4;
+    box-shadow: 0 0 10px rgba(26, 26, 26, 0.5);
+  }
+  .btn-zero {
+    grid-column: 1 / 3;
+  }
+  .btn-igual {
+    grid-row: 4 / 6;
+    height: 100%;
+    grid-column: 4;
+    background-color: rgb(0, 255, 0);
+  }
+  .btn-igual:hover {
+    background-color: rgb(0, 255, 0, 0.5);
+    transition: 0.4s;
+  }
+  .btn-c {
+    background-color: rgb(255, 0, 0, 0.7);
+  }
+  .btn-c:hover {
+    background-color: rgb(255, 0, 0, 0.5);
+    transition: 0.4s;
+  }
+}
